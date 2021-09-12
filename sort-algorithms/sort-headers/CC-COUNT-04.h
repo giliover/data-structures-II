@@ -1,13 +1,7 @@
-int maxArray(int *Array)
+void convertToIntegersIndex(int *Countator, int maxvalue)
 {
-    int current = Array[0];
-    for (int i = 1; i < length; i++)
+    for (int index = 1; index <= maxvalue; index++)
     {
-        if (current < Array[i])
-        {
-            current = Array[i];
-        }
+        Countator[index] = Countator[index] + Countator[index - 1];
     }
-
-    return current + 1;
 }

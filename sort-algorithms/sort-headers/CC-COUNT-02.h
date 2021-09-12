@@ -1,16 +1,10 @@
-#include "CC-COUNT-03.h"
-#include "CC-COUNT-04.h"
-#include "CC-COUNT-05.h"
-#include "CC-COUNT-06.h"
-#include "CC-COUNT-07.h"
-
 void _countingSort(int *Integers, int *comparations, int *copies)
 {
-    int lengthcount = maxArray(Integers);
+    int lengthcount = maxArrayValueIndex(Integers) + 1;
 
     int Countator[lengthcount];
 
-    initArray(Countator, lengthcount);
+    initArrayWithZero(Countator, lengthcount);
     // printf("Ok - find your greatest value %d.\n\n", lengthcount);
 
     runCountator(Integers, Countator);
