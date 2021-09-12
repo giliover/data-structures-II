@@ -1,9 +1,8 @@
-void printArray(int *array)
+void printArray(int *Integers, int lengthReceveid)
 {
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < lengthReceveid; i++)
     {
-        printf("| %d:  %d |", i, array[i]);
-        // usleep(100000);
+        printf("| %.2d:  %.2d |", i, Integers[i]);
     }
     printf("\n");
 }
