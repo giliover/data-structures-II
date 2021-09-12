@@ -7,8 +7,10 @@
 #include <unistd.h>
 
 /*	ADT Prototype Declarations */
-void printArray(int *array);
-void mergeSort(int A[], int start, int end);
+void printArray(int *Integers, int lengthReceveid);
+void countingSort(int *Integers);
+void mergeSort(int *Integers);
 
 #include "CC-PRINT-01.h" /* print int Array */
-#include "CC-MERGE-01.h"  /* merge sort algorithm */
+#include "CC-COUNT-01.h" /* countingSort algorithm */
+#include "CC-MERGE-01.h" /* mergeSort algorithm */
