@@ -1,4 +1,7 @@
 #include "CC-COUNT-02.h"
+#include "CC-COUNT-03.h"
+#include "CC-COUNT-04.h"
+#include "CC-COUNT-05.h"
 
 void countingSort(int *Integers)
 {

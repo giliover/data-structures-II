@@ -1,7 +1,10 @@
-void initArray(int *Array, int lengthArray)
+void runCountator(int *Integers, int *Countator)
 {
-    for (int i = 0; i < lengthArray; i++)
+    int integersvalue;
+
+    for (int index = 0; index < length; index++)
     {
-        Array[i] = 0;
+        integersvalue = Integers[index];
+        Countator[integersvalue]++;
     }
 }
