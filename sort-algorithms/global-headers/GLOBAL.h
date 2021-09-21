@@ -1,6 +1,6 @@
 /*	ADT Prototype Declarations */
 void initArrayWithZero(int *Array, int lengthArray);
-void initArrayWithYourIndex(int *Array, int lengthArray);
+void initArrayWithYourIndex(long int *Array, long int lengthArray);
 int maxArrayValueIndex(int *Array);
 void printArray(int *Array, int lengthArray);
 void swap(int* firtelement, int* endelement);

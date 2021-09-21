@@ -8,7 +8,6 @@
 #include <unistd.h>
 
 /*	ADT Prototype Declarations */
-void printArray(int *Integers, int lengthReceveid);
 void countingSort(int *Integers);
 void mergeSort(int *Integers);
 void selectionSort(int *Integers);

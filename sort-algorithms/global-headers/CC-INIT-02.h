@@ -1,10 +1,10 @@
-/*-----------------------------------
-Efetua a leitura do vetor
--------------------------------------*/
-void initArrayWithYourIndex(int Array[], int lengthArray)
+void initArrayWithYourIndex(long int *Array, long int lengthArray)
 {
     srand(time(NULL));
 
-    for (int index = 0; index < lengthArray; index++)
-        Array[index] = index;
+    for (long int index = 0; index < lengthArray; index++)
+    {
+        Array[index] = 1 + rand() % lengthArray;
+        Array[index] += 1 + rand() % lengthArray;
+    }
 }

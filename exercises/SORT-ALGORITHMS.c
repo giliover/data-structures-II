@@ -1,4 +1,4 @@
-#include "../sort-headers/SORT.h"
+#include "../sort-algorithms/sort-headers/SORT.h"
 
 int main()
 {
