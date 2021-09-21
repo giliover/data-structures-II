@@ -1,4 +1,4 @@
-void calcComplexByTime(char *FILENAME, int query, int *Array, int *position, int chosen)
+void calcComplexByTime(char *FILENAME, long int query, long int *Array, long int *position, int chosen)
 {
 	float timevalue;
 	char *PROBLEMLENGTHNAME = "Problem length: ";
@@ -22,9 +22,9 @@ void calcComplexByTime(char *FILENAME, int query, int *Array, int *position, int
 	fprintf(fileopened, "<th>%s</th>", PROBLEMLENGTHNAME);
 	fprintf(fileopened, "<th>%s</th></tr></thead><tbody>", TIMENAME);
 	
-	for (int currentproblemlength = 1; currentproblemlength < length; currentproblemlength = currentproblemlength + 999)
+	for (long int currentproblemlength = 1; currentproblemlength < length; currentproblemlength = currentproblemlength + 100000)
 	{
-		fprintf(fileopened, "<tr><th>%d</th>", currentproblemlength);
+		fprintf(fileopened, "<tr><th>%ld</th>", currentproblemlength);
 		fprintf(fileopened, "<th>%f</th></tr>", timevalue);
 	}
 

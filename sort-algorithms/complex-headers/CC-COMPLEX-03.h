@@ -11,13 +11,13 @@ void calcComplexByNumberOfOperations(char *FILENAME, int chosen)
 	fprintf(fileopened, "<th>%s</th>", PROBLEMLENGTHNAME);
 	fprintf(fileopened, "<th>%s</th></tr></thead><tbody>", OPERATIONSNAME);
 	
-	for (int currentproblemlength = 1; currentproblemlength < length; currentproblemlength = currentproblemlength + 999)
+	for (long int currentproblemlength = 1; currentproblemlength < length; currentproblemlength = currentproblemlength + 100000)
 	{
 
 		switch (chosen)
 		{
 		case 1:
-			fprintf(fileopened, "<tr><th>%d</th>", currentproblemlength);
+			fprintf(fileopened, "<tr><th>%ld</th>", currentproblemlength);
 			fprintf(fileopened, "<th>%f</th></tr>", (double)log10(currentproblemlength) / (double)log10(2));
 			break;
 		default:
