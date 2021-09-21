@@ -1,4 +1,4 @@
-#include "../sort-algorithms/search-headers/SEARCH.h"
+#include "../lib/search-headers/SEARCH.h"
 
 #define ISTRING "1 - to binary search algorithms\n\n "
 
