@@ -1,33 +1,66 @@
-void calcComplexByTime(char *FILENAME, long int query, long int *Array, long int *position, int chosen)
+void startTable(FILE *fileopened)
 {
-	float timevalue;
 	char *PROBLEMLENGTHNAME = "Problem length: ";
-	char *TIMENAME = "Time( seconds): ";
-
-	switch (chosen)
-	{
-	case 1:
-		timevalue = returnTimeOfBinarySearch(Array, query, position);
-		break;
-	default:
-		printf("Not found algorithm");
-		break;
-	}
-
-	FILE *fileopened;
-	fileopened = fopen(FILENAME, "a+");
-	resetFile(FILENAME);
+	char *TIMENAME = "Time( milliseconds): ";
 
 	fprintf(fileopened, "<table style='width: 60vw;'><thead><tr>");
 	fprintf(fileopened, "<th>%s</th>", PROBLEMLENGTHNAME);
 	fprintf(fileopened, "<th>%s</th></tr></thead><tbody>", TIMENAME);
-	
-	for (long int currentproblemlength = 1; currentproblemlength < length; currentproblemlength = currentproblemlength + 100000)
+}
+
+void tableValue(FILE *fileopened, float timevalue)
+{
+	fprintf(fileopened, "<tr><th>%ld</th>", length);
+	fprintf(fileopened, "<th>%f</th></tr>", timevalue);
+}
+
+void endTable(FILE *fileopened)
+{
+	fprintf(fileopened, "</tbody></table>");
+}
+void calcComplexByTime(char *FILENAME, void *query, void *Array, long int *position, int chosen)
+{
+	FILE *fileopened;
+	fileopened = fopen(FILENAME, "a+");
+
+	float timevalue;
+	long int *Integers = (long int *)Array;
+
+	if (length == 10000)
 	{
-		fprintf(fileopened, "<tr><th>%ld</th>", currentproblemlength);
-		fprintf(fileopened, "<th>%f</th></tr>", timevalue);
+		startTable(fileopened);
 	}
 
-	fprintf(fileopened, "</tbody></table>");
+	for (int index = 1; index < 3; index++)
+	{
+		switch (chosen)
+		{
+		case 1:
+			timevalue = returnTime(Integers, NULL, NULL, chosen);
+			tableValue(fileopened, timevalue);
+			break;
+		case 2:
+			timevalue = returnTime(Integers, NULL, NULL, chosen);
+			tableValue(fileopened, timevalue);
+			break;
+		case 3:
+			timevalue = returnTime(Integers, NULL, NULL, chosen);
+			tableValue(fileopened, timevalue);
+			break;
+		case 4:
+			timevalue = returnTime(Integers, query, position, chosen);
+			tableValue(fileopened, timevalue);
+			break;
+		default:
+			printf("Not found algorithm");
+			break;
+		}
+	}
+
+	if (length == 90000)
+	{
+		endTable(fileopened);
+	}
+
 	fclose(fileopened);
 }

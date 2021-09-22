@@ -1,13 +1,13 @@
-int maxArrayValueIndex(int *Array)
+long int maxArrayValue(long int *Array)
 {
-    int current = Array[0];
-    for (int i = 1; i < length; i++)
+    long int bigvalue = Array[0];
+    for (long int index = 1; index < length; index++)
     {
-        if (current < Array[i])
+        if (bigvalue < Array[index])
         {
-            current = Array[i];
+            bigvalue = Array[index];
         }
     }
 
-    return current;
+    return bigvalue;
 }

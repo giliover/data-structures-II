@@ -1,0 +1,1 @@
+<table style='width: 60vw;'><thead><tr><th>Problem length: </th><th>Time( milliseconds): </th></tr></thead><tbody><tr><th>10000</th><th>5.503000</th></tr><tr><th>10000</th><th>3.016000</th></tr><tr><th>50000</th><th>21.892000</th></tr><tr><th>50000</th><th>10.782000</th></tr><tr><th>90000</th><th>35.743000</th></tr><tr><th>90000</th><th>19.770000</th></tr></tbody></table>

@@ -1,12 +1,12 @@
-void _merge(int *Integers, int begginInterval, int middleInterval, int endInterval, int *comparations, int *copies)
+void _merge(long int *Integers, long int begginInterval, long int middleInterval, long int endInterval, long int *comparations, long int *copies)
 {
-    int limitLeft = middleInterval - begginInterval + 1;
-    int limitRight = endInterval - middleInterval;
+    long int limitLeft = middleInterval - begginInterval + 1;
+    long int limitRight = endInterval - middleInterval;
 
-    int Left[limitLeft + 1];
-    int Right[limitRight + 1];
+    long int Left[limitLeft + 1];
+    long int Right[limitRight + 1];
 
-    int i, j;
+    long int i, j;
 
     Left[limitLeft] = INT_MAX;
     Right[limitRight] = INT_MAX;
@@ -29,7 +29,7 @@ void _merge(int *Integers, int begginInterval, int middleInterval, int endInterv
     i = 0;
     j = 0;
 
-    for (int index = begginInterval; index <= endInterval; index++)
+    for (long int index = begginInterval; index <= endInterval; index++)
     {
         *copies = *copies + 1;
         *comparations = *comparations + 1;

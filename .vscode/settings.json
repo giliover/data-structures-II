@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.h": "c",
+        "string_view": "c",
+        "functional": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

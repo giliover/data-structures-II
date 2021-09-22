@@ -1,4 +1,4 @@
-int partition(int Array[], int low, int high)
+int partition(int *Array, int low, int high)
 {
     int pivot = Array[high]; // pivot
     int i = (low - 1);       // Index of smaller element

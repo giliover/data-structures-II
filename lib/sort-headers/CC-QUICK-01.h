@@ -3,7 +3,7 @@
   begin  --> Starting index, 
   end  --> Ending index */
 
-void quickSort(int Array[], int begin, int end)
+void quickSort(long int *Array, int begin, int end)
 {
     if (begin < end)
     {

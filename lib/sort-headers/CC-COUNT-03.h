@@ -1,10 +1,7 @@
-void runCountator(int *Integers, int *Countator)
+void runCountator(long int *Integers, long int *Countator)
 {
-    int integersvalue;
-
-    for (int index = 0; index < length; index++)
+    for (long int index = 0; index < length; index++)
     {
-        integersvalue = Integers[index];
-        Countator[integersvalue]++;
+        Countator[Integers[index]]++;
     }
 }

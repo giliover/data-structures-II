@@ -2,10 +2,7 @@
 #include "CC-SELECTION-02.h"
 
 
-void selectionSort(int *Integers)
+void selectionSort(long int *Integers)
 {
-    int comparations = 0, copies = 0;
-    printArray(Integers, length);
-    _selectionSort(Integers, &comparations, &copies); // will be added the counting of the comparison and copies
-    printArray(Integers, length);
+    _selectionSort(Integers); 
 }
