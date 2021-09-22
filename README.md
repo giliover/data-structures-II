@@ -10,6 +10,5 @@
 ```
 </div> 
 
-<!-- 
-<li style="font-size: 0.6rem"><img alt="html-generated algorithm complexity table ( problem length x operations number) " src="assets/docs/complexity-binary-by-operations.md"></img></li>
-<li style="font-size: 0.6rem"><img alt="html-generated algorithm complexity table ( problem length x time) " src="assets/docs/complexity-binary-by-time.md"></img></li> -->
+
+<li style="font-size: 0.6rem"><img alt="html-generated algorithm complexity table ( problem length x runtime) " src="assets/docs/"></img></li>
