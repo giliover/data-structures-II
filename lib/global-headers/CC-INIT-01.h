@@ -1,7 +1,10 @@
-void initArrayWithZero(int *Array, int lengthArray)
+void initArrayWithRandomNumber(long int *Array)
 {
-    for (int i = 0; i < lengthArray; i++)
+    srand(time(NULL));
+
+    for (long int index = 0; index < length; index++)
     {
-        Array[i] = 0;
+        Array[index] = 1 + rand() % length;
+        Array[index] += 1 + rand() % length;
     }
 }

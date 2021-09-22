@@ -1,25 +1,32 @@
-void _countingSort(int *Integers, int *comparations, int *copies)
+void _countingSort(long int *Integers)
 {
-    int lengthcount = maxArrayValueIndex(Integers) + 1;
+    long int maxvalue = maxArrayValue(Integers) + 1;
+    // printf("Ok - find your greatest value: %ld\n\n", maxvalue);
 
-    int Countator[lengthcount];
+    long int *Countator[maxvalue];
 
-    initArrayWithZero(Countator, lengthcount);
-    // printf("Ok - find your greatest value %d.\n\n", lengthcount);
+    initArrayWithZero(Countator, maxvalue);
+    // printf("Ok - init countator with zero .\n\n");
+    // printf("Count: ");
+    // printArray(Countator, maxvalue);
 
     runCountator(Integers, Countator);
-
     // printf("Ok - quantity count of Integers Vector . \n");
-    // printArray(Countator, lengthcount);
+    // printf("Count: ");
+    // printArray(Countator);
+    // printf("Integers: ");
+    // printArray(Integers);
     // printf("\n");
 
-    convertToIntegersIndex(Countator, lengthcount);
+    convertToIntegersIndex(Countator, maxvalue);
     // printf("Ok - convert count to index of Integers Vector. \n");
-    // printArray(Countator, lengthcount);
+    // printf("Count: ");
+    // printArray(Countator);
     // printf("\n");
-    
-    applyCountatorInIntegers(Integers, Countator, lengthcount);
+
+    applyCountatorInIntegers(Integers, Countator);
     // printf("Ok - apply Countador  to Integers Vector. \n");
-    // printArray(Integers, length);
+    // printf("Integers: ");
+    // printArray(Countator);
     // printf("\n");
 }

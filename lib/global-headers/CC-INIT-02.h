@@ -1,10 +1,9 @@
-void initArrayWithYourIndex(long int *Array, long int lengthArray)
+void initArrayWithRandomNumberSmallerSize(long int *Array)
 {
     srand(time(NULL));
 
-    for (long int index = 0; index < lengthArray; index++)
+    for (long int index = 0; index < length; index++)
     {
-        Array[index] = 1 + rand() % lengthArray;
-        Array[index] += 1 + rand() % lengthArray;
+        Array[index] = rand() % length;
     }
 }

@@ -1,8 +1,8 @@
-void _selectionSort(int Integers[], int *comparations, int *copies)
+void _selectionSort(long int Integers[])
 {
-    int minindexofintegerspart;
+    long int minindexofintegerspart;
 
-    for (int index = 0; index < length - 1; index++)
+    for (long int index = 0; index < length - 1; index++)
     {
         minindexofintegerspart = index;
         minindexofintegerspart = lowestValueIndex(Integers, index);

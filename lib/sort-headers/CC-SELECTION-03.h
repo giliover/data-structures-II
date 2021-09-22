@@ -1,4 +1,4 @@
-int lowestValueIndex(int *Array, int start)
+long int lowestValueIndex(long int *Array, long int start)
 {
     int limitRight = start;
 

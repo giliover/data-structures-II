@@ -1,6 +1,6 @@
 /*	ADT Prototype Declarations */
-float returnTimeOfBinarySearch(long int *Array, long int query, long int *position);
-void calcComplexByTime(char *FILENAME, long int query, long int *Array, long int *position, int chosen);
+double returnTime(long int *Array, void *query, void *position, int chosen);
+void calcComplexByTime(char *FILENAME, void *query, void *Array, long int *position, int chosen);
 void calcComplexByNumberOfOperations(char *FILENAME, int chosen);
 
 #include "CC-COMPLEX-04.h" /* reset file */

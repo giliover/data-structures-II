@@ -1,6 +1,6 @@
-void swap(int* firtelement, int* endelement) 
+void swap(long int* firtelement, long int* endelement) 
 { 
-    int tmp = *firtelement; 
+    long int tmp = *firtelement; 
     *firtelement = *endelement; 
     *endelement = tmp; 
 } 

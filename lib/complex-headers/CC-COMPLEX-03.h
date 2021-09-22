@@ -10,7 +10,7 @@ void calcComplexByNumberOfOperations(char *FILENAME, int chosen)
 	fprintf(fileopened, "<table style='width: 60vw;'><thead><tr>");
 	fprintf(fileopened, "<th>%s</th>", PROBLEMLENGTHNAME);
 	fprintf(fileopened, "<th>%s</th></tr></thead><tbody>", OPERATIONSNAME);
-	
+
 	for (long int currentproblemlength = 1; currentproblemlength < length; currentproblemlength = currentproblemlength + 100000)
 	{
 
